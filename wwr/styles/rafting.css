@@ -139,6 +139,12 @@ article {
     margin-top: 8px;
 }
 
+.home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -216,4 +222,44 @@ footer {
     padding: 10px;
     font-family: var(--body-font);
     cursor: pointer;
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.trips > h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.trips-table {
+    margin-top: 30px;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.trips-cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.trips-cta a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
 }
